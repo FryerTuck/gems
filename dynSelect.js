@@ -14,5 +14,7 @@ Object.defineProperty
             let htm=this.response; // maybe do some hacking here before inserting
             slf.innerHTML=htm;
         });
+        xhr.open("GET",url);
+        xhr.send();
     }}
 );
